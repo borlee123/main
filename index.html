@@ -2,96 +2,87 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link href="style.css" type="text/css" rel="stylesheet" />
-  <title>Сайт резюме</title>
+    <link href="style1.css" type="text/css" rel="stylesheet" />
+
+    <title>Сайт резюме</title>
   </head>
   <body>
-    <table cellspacing="30">
-      <tr>
-        <td>
-          <div class="tomatto img">
-            <img src="tomatto.png" alt="Tommato" height="200" />
-          </div>
-        </td>
-        <td>
-        
-          <h1>Евгений Суханик</h1>
-          <p>
-            <em>
-              В данный момент работаю менеджером в
-              <a href="https://mir-burger.ru/" target="_black"> фастфуде</a>
-            </em>
-          </p>
-          <div class="content">
-            <p>
-              Учу HTML и CSS ,<a class="fancy-link"
-                >потом буду работать с JAVAScript для того что бы стать FrontEnd
-                разработчиком</a
-              >
-            </p>
-          </div>
-        </td>
-      </tr>
-    </table>
+    <div class="container">
+      <div class="info">
+        <img src="ava2.png" alt="My photo" class="avatar" />
+        <h1>Евгений Суханик</h1>
+        <p>
+          В данный момент работаю менеджером в
+          <a href="https://mir-burger.ru/" target="_black">фастфуде </a>
+        </p>
 
-    <hr />
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li>
-        <a class="fancy-link" href="https://vk.com/ckey_ti" target="_blank">
-          <img class="pict" src="vk.png" alt="Значек твиттера" />
+        <p>
+          Учу HTML и CSS , >потом буду работать с JAVAScript для того что бы
+          стать FrontEnd разработчиком
+        </p>
+        <h4>Мои социальные сети</h4>
+
+        <a class="fancy-link" href="https://vk.com/ckey_ti" target="_blank"
+          >В Контакте
+          <!-- <img class="pict" src="vk.png" alt="Значек твиттера" /> -->
         </a>
-      </li>
-      <li>
+        |
         <a
           href="https://www.youtube.com/watch?v=gfXziMxmnkY&list=PLlq9ExswxALej__svWjoBsdZff-6TXajx&index=8"
           target="_blank"
           >Youtube</a
         >
-      </li>
-    </ul>
-    <hr />
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Учить HTML</li>
-      <li>Учить CSS</li>
-      <li>Учить JAVAScript</li>
-      <li>Играть в WOW</li>
-    </ol>
-    <hr />
-    <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Года работы</th>
-      </tr>
+      </div>
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol>
+          <li>Учить HTML</li>
+          <li>Учить CSS</li>
+          <li>Учить JAVAScript</li>
+          <li>Играть в WOW</li>
+        </ol>
+      </div>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table>
+          <tr>
+            <th>Компания</th>
+            <th>Должность</th>
+            <th>Года работы</th>
+          </tr>
 
-      <tr>
-        <td>MacDonalds</td>
-        <td>NightWorker</td>
-        <td>2013-2014</td>
-      </tr>
-      <tr>
-        <td>NovaPoshta</td>
-        <td>loader</td>
-        <td>2014-2015</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Связаться со мной</h2>
-    <form>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя..." />
-      <br />
-      <label for="mail">Ваше email:</label>
-      <input type="email" id="mail" placeholder="Введите ваш email..." />
-      <br />
-      <label for="text">Ваше сообщение:</label>
-      <br />
-      <textarea name="text" id="" cols="20" rows="2"></textarea>
-      <br />
-      <input type="submit" value="Связаться " />
-    </form>
+          <tr>
+            <td>MacDonalds</td>
+            <td>NightWorker</td>
+            <td>2013-2014</td>
+          </tr>
+          <tr>
+            <td>NovaPoshta</td>
+            <td>loader</td>
+            <td>2014-2015</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-red">
+        <h2>Youtube канал</h2>
+        <a href="https://www.youtube.com/watch?v=STgz8r85x1c"
+          >Посмотреть канал</a
+        >
+      </div>
+      <h2>Связаться со мной</h2>
+      <form action="">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Введите ваше имя..." />
+        <br />
+        <label for="mail">Ваше email:</label>
+        <input type="email" id="mail" placeholder="Введите ваш email..." />
+        <br />
+        <label for="text">Ваше сообщение:</label>
+        <br />
+        <textarea name="text" id="" cols="20" rows="2"></textarea>
+        <br />
+        <input type="submit" value="Связаться " />
+      </form>
+    </div>
   </body>
 </html>
